@@ -142,6 +142,30 @@ ______________________________________________
 
   >**NOTE;** _During the Zoomcamp evaluation process, the project will already be live on the cloud. Therefore, after activating the environment, you can skip to step 7 to use the API and ignore deployment steps 5 and 6._
 
+Necessary tools for running the project: `python 3.11`, `pipenv` and `Docker`.
+  - **Installing python 3.11:**
+    Download the python 3.11 version from the [website](https://www.python.org/downloads/).
+    If already installed on Ubuntu with a lower version, use the below:
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt-get install python3.11
+```
+  - **Installing pipenv:**
+```bash
+pip install pipenv
+```
+  - **Installing Docker:**
+```bash
+sudo apt-get install docker.io
+```
+Use docker without sudo.
+```bash
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo service docker restart
+```
+
 1. Clone the repository.
 ```bash
 git clone https://github.com/dieegogutierrez/heart-attack-model.git
@@ -171,7 +195,7 @@ docker run -it -p 9696:9696 heart-attack-prediction:latest
 eb init -p docker heart-attack-prediction
 eb create heart-attack-prediction-env --enable-spot
 ```
-- A URL will show at the end under `CNAME`. Update the file **[predict_test.py](tests/predict_test.py)** with the URL in order to test your API serving.
+- A URL will show at the end. Update the file **[predict_test.py](tests/predict_test.py)** with the URL in order to test your API serving.
 - Terminate the cloud serving.
 ```bash
 eb terminate heart-attack-prediction-env
