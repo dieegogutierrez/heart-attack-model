@@ -109,6 +109,8 @@ In this notebook:
 
 The best-performing model, based on the ROC AUC Score, was selected for deployment.
 
+______________________________________________
+
 ### Project Structure  
 
 - **[data](data)** - Folder with dataset files.  
@@ -133,6 +135,8 @@ The best-performing model, based on the ROC AUC Score, was selected for deployme
   - **[Dockerfile](Dockerfile)** - Dockerfile for containerizing the application.  
   - **[.dockerignore](.dockerignore)** - File specifying files to ignore during Docker build.
   - **[.gitignore](.gitignore)** - Specifies files to ignore in version control.  
+
+______________________________________________
 
 ### Reproducibility
 
