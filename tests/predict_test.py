@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = 'http://heart-attack-prediction-env.eba-cxneqs5v.us-west-2.elasticbeanstalk.com/predict'
+url = 'http://heart-attack-prediction-env.eba-wmj6mk3e.us-west-2.elasticbeanstalk.com/predict'
 url_local = 'http://localhost:9696/predict'
 
 patient = {

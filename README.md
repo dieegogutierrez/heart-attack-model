@@ -200,7 +200,7 @@ eb create heart-attack-prediction-env --enable-spot
 eb init -i
 ```
 - A URL will show at the end. Update the file **[predict_test.py](tests/predict_test.py)** with the URL in order to test your API serving.
-- Terminate the cloud serving.
+- Terminate the cloud serving, after used.
 ```bash
 eb terminate heart-attack-prediction-env
 ```
