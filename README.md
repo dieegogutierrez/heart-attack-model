@@ -195,6 +195,10 @@ docker run -it -p 9696:9696 heart-attack-prediction:latest
 eb init -p docker heart-attack-prediction
 eb create heart-attack-prediction-env --enable-spot
 ```
+- If prompted with error, use the -i flag and go step by step:
+```bash
+eb init -i
+```
 - A URL will show at the end. Update the file **[predict_test.py](tests/predict_test.py)** with the URL in order to test your API serving.
 - Terminate the cloud serving.
 ```bash
